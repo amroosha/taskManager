@@ -3,8 +3,18 @@ import SearchBox from './searchBox'
 import UtilityNav from './utilityNav'
 import '../css/nav.css'
 
-function Nav(props) {
+async function Nav(props) {
 
+  const response = await fetch('http://localhost:5240/api/user/me' , {method : 'GET' ,
+    headers: { 
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include'
+    
+  } );
+
+  const data = await response.json();
+  
     return (
       <nav>
         <Organization {...props.org}/>
