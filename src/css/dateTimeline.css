@@ -1,0 +1,45 @@
+.vis-timeline .vis-panel.vis-center .vis-grid.vis-odd {
+  background-color: #1352c5;
+}
+
+.vis-timeline .vis-panel.vis-center .vis-grid.vis-even {
+  background-color: #cfd0d3;
+}
+
+.vis-timeline .vis-panel.vis-top {
+  height: 62px;
+  background-color: #1B1B1B;
+}
+
+.vis-panel.vis-left {
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.vis-timeline {
+  border: 1px solid #616161 !important; /* Replace with your desired color */
+}
+
+.vis-time-axis .vis-text {
+  color: white !important;
+}
+
+.vis-major {
+  margin-left: 15px !important;
+}
+
+.vis-group {
+  height: 100px !important;
+}
+
+.vis-item {
+  border: none !important;
+}
+
+.vis-item-content {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}

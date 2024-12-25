@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #1B1B1B;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+#divider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  overflow-y: hidden;
+}
+
+#timeline-container {
+  width: 100%;
+  height: 100%;
+}
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
