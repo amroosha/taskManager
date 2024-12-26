@@ -1,25 +1,19 @@
-import { useState } from 'react'
-import Nav from './components/nav'
-import Filter from './components/filter'
-import data from './constants/test'
-import DateTimeline from './components/dateTimeline'
-import './css/App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Signup from './components/signUp';
+import Login from './components/login';
+import HomePage from './HomePage';
 
 function App() {
-
-  return (
-    <>
-      <Nav {...data} />
-      <div id="divider">
-        <div id='task-container'>
-          <Filter />
-        </div>
-        <div id='timeline-container'>
-          <DateTimeline tasks={data.org.tasks}/>
-        </div>
-      </div>
-    </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/" element={<Login />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
